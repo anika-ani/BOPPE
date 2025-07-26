@@ -1,0 +1,165 @@
+BOPPE - AI THERAPY COMPANION APP
+=====================================
+
+PROJECT OVERVIEW
+-----------------
+Boppe is a conversational AI application designed for accessible emotional support, offering guided therapy sessions through both voice and text interfaces. The app provides 10-30 minute sessions with an empathetic AI that helps users explore thoughts, emotions, and behaviors.
+
+KEY FEATURES
+------------
+1. Voice Mode (Premium) - Real-time voice conversations with AI therapist
+2. Text Mode (Free) - Chat-based therapy sessions
+3. Session End Flow - Post-session analysis with personality insights
+4. Gen Z Mode - Casual, youth-friendly conversation style
+5. Session History - Track progress over time
+6. Privacy-First - Encrypted conversations, GDPR compliant
+7. Onboarding Flow - Comprehensive user setup process
+
+TECHNICAL STACK
+---------------
+- Frontend: React 19.1.0 with TypeScript
+- Styling: Tailwind CSS 3.3.0
+- Routing: React Router DOM 6.26.1
+- Icons: Lucide React 0.263.1
+- Build Tool: Vite 4.4.5
+- Package Manager: npm
+
+PROJECT STRUCTURE
+-----------------
+src/
+├── components/
+│   ├── LandingPage.tsx       - Marketing homepage
+│   ├── AuthPages.tsx         - Login/signup forms
+│   ├── OnboardingFlow.tsx    - Multi-step user setup
+│   ├── Homepage.tsx          - Main dashboard with modes
+│   ├── VoiceInterface.tsx    - Voice conversation UI
+│   ├── SessionEndFlow.tsx    - Post-session analysis
+│   └── FeedbackDialog.tsx    - User feedback collection
+├── App.tsx                   - Main router component
+├── main.tsx                  - React entry point
+└── index.css                 - Global styles
+
+MAIN COMPONENTS BREAKDOWN
+-------------------------
+
+1. LANDING PAGE
+   - Hero section with value proposition
+   - Feature showcase with visual demos
+   - Social proof and testimonials
+   - FAQ section
+   - Call-to-action buttons
+
+2. AUTHENTICATION
+   - Toggle between login/signup
+   - Email/password forms
+   - Google OAuth integration
+   - Terms and privacy links
+
+3. ONBOARDING FLOW (18 slides)
+   - Personal information collection
+   - Therapy goals and preferences
+   - Privacy commitments
+   - Gen Z mode activation
+   - Voice vs text preference
+
+4. HOMEPAGE/DASHBOARD
+   - Morning greeting
+   - Mode selection (Voice/Text)
+   - Sidebar navigation
+   - Settings and preferences
+   - Gen Z mode toggle
+
+5. TEXT MODE
+   - Chat interface
+   - Message history
+   - Input controls
+   - Session end dialog
+
+6. VOICE INTERFACE (5 states)
+   - Initial connection
+   - Connecting phase
+   - Your turn (listening)
+   - Listening (with waveform)
+   - AI responding
+
+7. SESSION END FLOW (4 steps)
+   - Loading/analysis phase
+   - Personality card reveal
+   - Character strength insights
+   - Detailed session summary
+
+STYLING APPROACH
+----------------
+- Minimalist, therapy-friendly design
+- Soft color palette (grays, blues, yellows)
+- Rounded corners and gentle shadows
+- Responsive layout principles
+- Smooth transitions and micro-interactions
+
+KEY DESIGN PATTERNS
+-------------------
+1. Progressive disclosure - Information revealed step by step
+2. Gentle animations - Pulse effects, smooth transitions
+3. Consistent iconography - Lucide icons throughout
+4. Card-based layouts - Information contained in cards
+5. Toast notifications - Non-intrusive feedback
+
+CURRENT IMPLEMENTATION STATUS
+-----------------------------
+✅ Complete Components:
+- Landing page with full marketing content
+- Authentication flows
+- Onboarding process (18 slides)
+- Homepage dashboard
+- Text mode chat interface
+- Voice interface (5 states)
+- Session end flow (4 steps)
+- Settings and privacy controls
+
+⚠️ Needs Implementation:
+- Backend integration
+- Voice recognition/synthesis
+- AI conversation logic
+- User authentication system
+- Session data persistence
+- Payment processing (premium features)
+
+TODO ITEMS (from README)
+------------------------
+1. Add voice-interface file to voice mode ✅ (Already implemented)
+2. Add the logo (placeholder circles used currently)
+3. Train chatbot to be therapist with Gen Z mode switching
+4. Create session end flow second slide (completed)
+
+DEVELOPMENT SETUP
+-----------------
+1. Install dependencies: npm install
+2. Start dev server: npm run dev
+3. Build for production: npm run build
+4. Preview build: npm run preview
+
+DEPLOYMENT CONSIDERATIONS
+------------------------
+- Environment variables for API keys
+- HTTPS required for voice features
+- GDPR compliance for EU users
+- Performance optimization for mobile
+- Accessibility standards compliance
+
+BUSINESS MODEL
+--------------
+- Freemium: Text mode free, voice mode premium
+- Subscription tiers for advanced features
+- Privacy-first positioning
+- Target audience: Gen Z and millennials
+- 100,000+ user testimonials highlight market fit
+
+PRIVACY & SECURITY
+------------------
+- End-to-end encryption
+- No conversation data used for training
+- GDPR compliant data handling
+- User data deletion on request
+- Secure session storage
+
+This implementation provides a solid foundation for a modern AI therapy application with room for backend integration and advanced AI features.
